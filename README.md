@@ -78,4 +78,4 @@ Aplikasi ini memiliki dua role utama, yaitu Admin dan Pengguna.
 
 <hr>
 
-<p>☕✨ Terima kasih telah berkunjung ke project aplikasi ini!</p>
+<p>☕✨ Terima kasih telah mengunjungi repositori ini!</p>
