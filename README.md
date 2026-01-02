@@ -24,46 +24,42 @@ Aplikasi ini memiliki dua role utama, yaitu Admin dan Pengguna.
 
 <p>Proyek ini merupakan hasil kolaborasi dari beberapa anggota tim, yaitu:</p>
 
-<ul>
-  <li>✨ <b>Khaila Noverisya Nurdi</b> (2417051022)</li>
-  <li>✨ <b>Maulana Abdillahul Fattah</b> (2417051055)</li>
-  <li>✨ <b>M. Faris Adithya</b> (2417051046)</li>
-  <li>✨ <b>Palwa Abiyyu Jaya</b> (2417051002)</li>
-</ul>
+  <p>✨ <b>Khaila Noverisya Nurdi</b> (2417051022)</p>
+  <p>✨ <b>Maulana Abdillahul Fattah</b> (2417051055)</p>
+  <p>✨ <b>M. Faris Adithya</b> (2417051046)</p>
+  <p>✨ <b>Palwa Abiyyu Jaya</b> (2417051002)</p>
 
 <hr>
 
 <h2>⭐ Fitur Utama</h2>
 
 <ul>
-  <li>🔐 <b>Autentikasi Pengguna</b><br>
-      Admin dan pengguna dapat melakukan login sesuai dengan peran masing-masing.</li>
+  <p>🔐 <b>Autentikasi Pengguna</b><br>
+      Admin dan pengguna dapat melakukan login sesuai dengan peran masing-masing.</p>
 
-  <li>🏪 <b>Manajemen Data Kafe (Admin)</b><br>
-      Admin dapat menambahkan, mengubah, dan menghapus data kafe.</li>
+  <p>🏪 <b>Manajemen Data Kafe (Admin)</b><br>
+      Admin dapat menambahkan, mengubah, dan menghapus data kafe.</p>
 
-  <li>📝 <b>Manajemen Review (Admin)</b><br>
-      Admin dapat mengelola ulasan yang diberikan oleh pengguna.</li>
+  <p>📝 <b>Manajemen Review (Admin)</b><br>
+      Admin dapat mengelola ulasan yang diberikan oleh pengguna.</p>
 
-  <li>💬 <b>Pemberian Review oleh Pengguna</b><br>
-      Pengguna dapat memberikan ulasan dan penilaian terhadap kafe.</li>
+  <p>💬 <b>Pemberian Review oleh Pengguna</b><br>
+      Pengguna dapat memberikan ulasan dan penilaian terhadap kafe.</p>
 
-  <li>🎨 <b>Antarmuka Interaktif</b><br>
-      Tampilan aplikasi dibuat menggunakan JavaFX agar mudah digunakan.</li>
+  <p>🎨 <b>Antarmuka Interaktif</b><br>
+      Tampilan aplikasi dibuat menggunakan JavaFX agar mudah digunakan.</p>
 </ul>
 
 <hr>
 
 <h2>🛠️ Teknologi yang Digunakan</h2>
 
-<ul>
-  <li>☕ Bahasa Pemrograman: Java</li>
-  <li>🧠 IDE: NetBeans</li>
-  <li>🖥️ GUI: JavaFX</li>
-  <li>🎨 UI Design: Scene Builder</li>
-  <li>🗄️ Database: PostgreSQL</li>
-  <li>📦 Build Tool: Maven</li>
-</ul>
+  <p>☕ Bahasa Pemrograman: Java</p>
+  <p>🧠 IDE: NetBeans</p>
+  <p>🖥️ GUI: JavaFX</p>
+  <p>🎨 UI Design: Scene Builder</p>
+  <p>🗄️ Database: PostgreSQL</p>
+  <p>📦 Build Tool: Maven</p>
 
 <hr>
 
@@ -77,7 +73,7 @@ Aplikasi ini memiliki dua role utama, yaitu Admin dan Pengguna.
   </li>
   <li>Buka project menggunakan NetBeans IDE.</li>
   <li>Jalankan aplikasi melalui file <b>Main / App.java</b>.</li>
-  <li>🎉 Aplikasi siap digunakan.</li>
+  <li>Aplikasi siap digunakan.</li>
 </ol>
 
 <hr>
