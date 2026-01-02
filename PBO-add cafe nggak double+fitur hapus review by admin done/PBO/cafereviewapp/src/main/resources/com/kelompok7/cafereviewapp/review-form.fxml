@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #E8D9C7;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReviewFormController">
+    <padding><Insets bottom="15" left="15" right="15" top="15" /></padding>
+    <children>
+      <AnchorPane prefHeight="585.0" prefWidth="870.0">
+         <children>
+              <Label layoutX="184.0" layoutY="72.0" prefHeight="0.0" prefWidth="62.0" text="Select Cafe:" />
+            <Label layoutX="357.0" layoutY="28.0" prefHeight="30.0" prefWidth="132.0" style="-fx-text-fill: #41230C; -fx-font-size: 20px; -fx-font-weight: bold;" text="Write Review" />
+              <ComboBox fx:id="cafeCombo" layoutX="184.0" layoutY="103.0" prefHeight="26.0" prefWidth="478.0" />
+      
+              <Label layoutX="184.0" layoutY="152.0" style="-fx-margin-top: 10;" text="Rating:" />
+              <ComboBox fx:id="ratingCombo" layoutX="184.0" layoutY="178.0" prefHeight="26.0" prefWidth="478.0" />
+      
+              <Label layoutX="187.0" layoutY="232.0" style="-fx-margin-top: 10;" text="Comment:" />
+              <TextArea fx:id="commentArea" layoutX="184.0" layoutY="250.0" prefHeight="137.0" prefRowCount="4" prefWidth="478.0" />
+                <Button layoutX="184.0" layoutY="416.0" onAction="#handleCancel" prefHeight="34.0" prefWidth="222.0" style="-fx-background-color: #F00000; -fx-text-fill: white; -fx-font-weight: bold; -fx-padding: 8 12;" text="Cancel" />
+                <Button layoutX="439.0" layoutY="416.0" onAction="#handleSave" prefHeight="34.0" prefWidth="222.0" style="-fx-background-color: #0F7840; -fx-text-fill: white; -fx-font-weight: bold; -fx-padding: 8 12;" text="Save" />
+         </children>
+      </AnchorPane>
+
+        <HBox spacing="10" style="-fx-margin-top: 15;" />
+    </children>
+</VBox>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane style="-fx-background-color: #E8D9C7;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+
+    <!-- Root HBox: kiri gambar, kanan form -->
+    <HBox prefHeight="600" prefWidth="900" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0">
+
+        <!-- Bagian kiri: Gambar -->
+        <VBox prefWidth="450">
+            <ImageView fitWidth="450" preserveRatio="true" VBox.vgrow="ALWAYS">
+                <image>
+                    <Image url="@images/bismillah.png" />
+                </image>
+            </ImageView>
+        </VBox>
+
+        <!-- Bagian kanan: Form Login -->
+        <VBox alignment="CENTER" prefWidth="450" spacing="15">
+            <padding>
+                <Insets bottom="40" left="40" right="40" top="40" />
+            </padding>
+
+            <Label style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-text-fill: #41230C;" text="Cafe Review App" />
+            <Label style="-fx-font-size: 20px; -fx-text-fill: #41230C;" text="Login" />
+
+            <Label text="Username:">
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+            <VBox.margin>
+               <Insets right="300.0" />
+            </VBox.margin></Label>
+            <TextField fx:id="usernameField" promptText="Enter username" style="-fx-padding: 8; -fx-border-color: #ccc; -fx-border-radius: 4;" />
+
+            <Label text="Password:">
+            <VBox.margin>
+               <Insets right="300.0" />
+            </VBox.margin></Label>
+            <PasswordField fx:id="passwordField" promptText="Enter password" style="-fx-padding: 8; -fx-border-color: #ccc; -fx-border-radius: 4;" />
+
+            <Button fx:id="loginButton" onAction="#handleLogin" prefHeight="38.0" prefWidth="370.0" style="-fx-background-color: #6A3105; -fx-text-fill: white; -fx-font-weight: bold; -fx-padding: 8 12; -fx-border-radius: 4; -fx-background-radius: 4;" text="Login">
+            <VBox.margin>
+               <Insets top="20.0" />
+            </VBox.margin></Button>
+            
+            <Button fx:id="registerButton"
+        text="Register"
+        prefWidth="370"
+        onAction="#goToRegister"
+        style="-fx-background-color: transparent; -fx-text-fill: #41230C; -fx-font-size: 14px; -fx-underline: true;" />
+        </VBox>
+
+    </HBox>
+</AnchorPane>

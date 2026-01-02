@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #E8D9C7;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CafeFormController">
+    <padding><Insets bottom="15" left="15" right="15" top="15" /></padding>
+    <children>
+      <AnchorPane prefHeight="585.0" prefWidth="478.0">
+         <children>
+            <Label layoutX="391.0" layoutY="14.0" style="-fx-text-fill: #41230C; -fx-font-size: 20px; -fx-font-weight: bold;" text="Add Cafe" />
+            <Label layoutX="209.0" layoutY="75.0" text="Cafe Name" />
+              <TextField fx:id="nameField" layoutX="209.0" layoutY="93.0" prefHeight="59.0" prefWidth="450.0" promptText="Insert cafe name here" />
+            <Label layoutX="208.0" layoutY="165.0" text="Location" />
+              <TextField fx:id="locationField" layoutX="209.0" layoutY="187.0" prefHeight="86.0" prefWidth="450.0" promptText="Insert location here" style="-fx-margin-top: 10;" />
+            <Label layoutX="208.0" layoutY="289.0" text="Description" />
+              <TextArea fx:id="descArea" layoutX="209.0" layoutY="310.0" prefHeight="164.0" prefRowCount="3" prefWidth="450.0" promptText="Insert description here" style="-fx-margin-top: 10;" />
+                <Button layoutX="443.0" layoutY="502.0" onAction="#handleSave" prefHeight="34.0" prefWidth="217.0" style="-fx-background-color: #0F7840; -fx-text-fill: white; -fx-font-weight: bold; -fx-padding: 8 12;" text="Save" />
+                <Button layoutX="208.0" layoutY="502.0" onAction="#handleCancel" prefHeight="34.0" prefWidth="218.0" style="-fx-background-color: #F00000; -fx-text-fill: white; -fx-font-weight: bold; -fx-padding: 8 12;" text="Cancel" />
+         </children>
+      </AnchorPane>
+        <HBox spacing="10" style="-fx-margin-top: 15;" />
+    </children>
+</VBox>

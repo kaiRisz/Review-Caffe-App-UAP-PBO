@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #E8D9C7;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserDashboardController">
+    <padding><Insets bottom="15" left="15" right="15" top="15" /></padding>
+    <children>
+      <AnchorPane prefHeight="11.0" prefWidth="732.0">
+         <children>
+              <Label layoutX="348.0" layoutY="3.0" style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-text-fill: #2c3e50;" text="User Dashboard">
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </Label>
+         </children>
+      </AnchorPane>
+
+        <TabPane style="-fx-margin-top: 10;" tabClosingPolicy="UNAVAILABLE">
+            <Tab text="Cafes">
+                <TableView fx:id="cafesTable" style="-fx-table-cell-border-color: transparent; -fx-background-color: #ECAE7E;">
+                    <columns>
+                        <TableColumn fx:id="cafeIdCol" prefWidth="60" text="ID" />
+                        <TableColumn fx:id="cafeNameCol" prefWidth="180" text="Name" />
+                        <TableColumn fx:id="cafeLocationCol" prefWidth="220" text="Location" />
+                        <TableColumn fx:id="cafeDescCol" prefWidth="250" text="Description" />
+                    </columns>
+                </TableView>
+            </Tab>
+
+            <Tab text="Reviews">
+                <VBox spacing="12">
+                    <children>
+                  <AnchorPane prefHeight="23.0" prefWidth="732.0">
+                     <children>
+                                <Button fx:id="writeReviewButton" layoutX="168.0" layoutY="4.0" onAction="#handleWriteReview" prefHeight="34.0" prefWidth="119.0" style="-fx-background-color: #0F7840; -fx-text-fill: white; -fx-font-weight: bold; -fx-padding: 8 12;" text="Write Review" />
+                                <Button fx:id="editReviewButton" disable="true" layoutX="366.0" layoutY="4.0" onAction="#handleEditReview" prefHeight="34.0" prefWidth="118.0" style="-fx-background-color: #F0A400; -fx-text-fill: white; -fx-font-weight: bold; -fx-padding: 8 12;" text="Edit Review" />
+                                <Button fx:id="deleteReviewButton" disable="true" layoutX="551.0" layoutY="4.0" onAction="#handleDeleteReview" prefHeight="34.0" prefWidth="118.0" style="-fx-background-color: #F00000; -fx-text-fill: white; -fx-font-weight: bold; -fx-padding: 8 12;" text="Delete Review" />
+                     </children>
+                  </AnchorPane>
+
+                        <TableView fx:id="reviewsTable" prefHeight="424.0" prefWidth="732.0" style="-fx-table-cell-border-color: transparent; -fx-background-color: white;">
+                            <columns>
+                                <TableColumn fx:id="reviewIdCol" prefWidth="50" text="ID" />
+                                <TableColumn fx:id="reviewCafeCol" prefWidth="150" text="Cafe" />
+                                <TableColumn fx:id="reviewUserCol" prefWidth="100" text="User" />
+                                <TableColumn fx:id="reviewRatingCol" prefWidth="70" text="Rating" />
+                                <TableColumn fx:id="reviewCommentCol" prefWidth="220" text="Comment" />
+                                <TableColumn fx:id="reviewDateCol" prefWidth="140" text="Date" />
+                            </columns>
+                        </TableView>
+                    </children>
+                </VBox>
+            </Tab>
+        </TabPane>
+    </children>
+</VBox>
